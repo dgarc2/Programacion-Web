@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+access-control-allow-credentials: true
+access-control-allow-origin: 
+cf-cache-status: DYNAMIC
+cf-ray: 8cb688fedd1b4653-DFW
+connection: keep-alive
+content-length: 43
+content-type: application/json; charset=UTF-8
+date: Mon, 30 Sep 2024 19:14:18 GMT
+nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+report-to: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=MfkNyvoZWK%2BGoIjwzAP1MUpMVRZNVLnNZSRct5wDpqXGWCrg6LCeU2cE1OjG7WWVcfY%2BwCzanO67xSNWpFDXGB5dMXDxPMVD%2FghyuCEqqa7Ddf4K7XUT3h49XkrvFX2ZNQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+server: cloudflare
+vary: Origin
+
+{
+  "url": "https://i.waifu.pics/l0ysv60.gif"
+}
