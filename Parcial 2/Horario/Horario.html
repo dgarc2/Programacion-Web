@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+
+        }
+        table,td{
+            border:2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        tr :first-child{
+            color: blue;
+        }
+        #trA{
+            color:red
+        }
+        @media screen and (max-width: 500px) {
+    body {
+        background-color: #f4f4f4; 
+        padding: 10px;  
+    }
+
+    
+    table {
+        display: block;
+        width: 100%;
+        border: none; 
+    }
+
+    thead {
+        display: none;  
+    }
+
+    tbody {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        display: block; 
+        margin-bottom: 20px;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border: 1px solid #ccc;  
+        background-color: white;
+    }
+
+    td::before {
+        content: attr(data-label);  
+        font-weight: bold;
+        width: 100px; 
+    }
+}
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr id="trA">
+                <td style="color: red">Materia</td>
+                <td>Lunes</td>
+                <td>Martes</td>
+                <td>Miercoles</td>
+                <td>Jueves</td>
+                <td>Viernes</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Programacion web</td>
+                <td>7-8</td>
+                <td>7-8</td>
+                <td>7-8</td>
+                <td>7-8</td>
+                <td>7-8</td>
+            </tr>
+            <tr>
+                <td>Fundamentos de Telecomunicaciones</td>
+                <td>-</td>
+                <td>11-13</td>
+                <td>11-12</td>
+                <td>11-12</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Sistemas Operativos</td>
+                <td>-</td>
+                <td>-</td>
+                <td>8-10</td>
+                <td>-</td>
+                <td>8-10</td>
+            </tr>
+            <tr>
+                <td>Cultura Empresarial</td>
+                <td>-</td>
+                <td>8-10</td>
+                <td>-</td>
+                <td>8-10</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Programacion web</td>
+                <td>14-15</td>
+                <td>14-15</td>
+                <td>14-15</td>
+                <td>14-15</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Arquitectura de computadoras</td>
+                <td>11-13</td>
+                <td>-</td>
+                <td>12-13</td>
+                <td>-</td>
+                <td>11-13</td>
+            </tr>
+            <tr>
+                <td>Ingenieria Software</td>
+                <td>13-14</td>
+                <td>13-14</td>
+                <td>13-14</td>
+                <td>13-14</td>
+                <td>13-14</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
