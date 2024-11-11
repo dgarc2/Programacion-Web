@@ -1,5 +1,7 @@
 const express = require ('express')
 const app = express()
+console.log(__dirname)
+console.log(__filename)
 
 app.use(express.json())
 app.get('/administrativos', (req,res)=>{
