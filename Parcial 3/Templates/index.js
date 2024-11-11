@@ -1,8 +1,8 @@
 const express = require ('express')
 const path = require('path')
 const app = express()
-console.log(__dirname)
-console.log(__filename)
+// console.log(__dirname)
+// console.log(__filename)
 
 
 app.use(express.json())
@@ -14,7 +14,7 @@ app.set('views', path.join(__dirname, 'views'))
 app.use(express.json())
 app.get('/administrativos', (req,res)=>{
     console.log(req.query)
-    res.send('servidor contestando a peticion')
+    // res.send('servidor contestando a peticion')
     res.render('admin')
 })
 
