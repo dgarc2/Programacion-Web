@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="wrapper"></div>
+
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js">
+
+    </script>
+    <script src="src/index.js"></script>
+    <script>
+let URLBase = 'https://proyectoweb-ndns.onrender.com'
+        fetch(URLBase+'/productos')
+            .then(response => response.json())
+                .then(data =>{
+                   
+                    new gridjs.Grid({
+                        columns: ["Id","Nombre", "Precio", "Stock"],
+                        data : data.map( producto => [producto.id, producto.nombre, producto.precio, producto.stock])
+                    }).render(document.getElementById('wrapper'))
+                })
+                .catch(error => console.error("Error: ", error));
+ 
+    </script>
+  </body>
+</html>
